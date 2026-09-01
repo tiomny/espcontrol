@@ -125,6 +125,14 @@ const screenProducts: Record<string, Record<string, string>> = {
     resolution: '720 x 720',
     processor: 'ESP32-P4',
   },
+  'screens/guition-esp32-s3-jc3248w535.md': {
+    name: 'Guition JC3248W535',
+    brand: 'Guition',
+    model: 'JC3248W535',
+    size: '3.5 inches',
+    resolution: '320 x 480',
+    processor: 'ESP32-S3',
+  },
 }
 
 const faqItems = [
@@ -414,6 +422,7 @@ export default defineConfig({
           { text: '4.3-inch JC4880P443', link: '/screens/jc4880p443' },
           { text: '4-inch ESP32-P4 86 Panel', link: '/screens/p4-86' },
           { text: '4-inch 4848S040', link: '/screens/4848s040' },
+          { text: '3.5-inch JC3248W535', link: '/screens/guition-esp32-s3-jc3248w535' },
           { text: 'Printable Stands', link: '/reference/3d-printable-stands' },
         ],
       },
