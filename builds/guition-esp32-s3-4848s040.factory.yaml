@@ -23,16 +23,16 @@ packages:
 esphome:
   name_add_mac_suffix: true
   project:
-    name: jtenniswood.espcontrol
+    name: tiomny.espcontrol
     version: "${firmware_version}"
 
 dashboard_import:
-  package_import_url: github://jtenniswood/espcontrol/devices/guition-esp32-s3-4848s040/esphome.yaml@main
+  package_import_url: github://tiomny/espcontrol/devices/guition-esp32-s3-4848s040/esphome.yaml@main
 
 web_server:
   port: 80
   version: 3
-  js_url: https://jtenniswood.github.io/espcontrol/webserver/www.js?device=${device_slug}&v=${firmware_version}&ui=20260714-shared
+  js_url: https://tiomny.github.io/espcontrol/webserver/www.js?device=${device_slug}&v=${firmware_version}&ui=20260714-shared
   js_include: "../docs/public/webserver/embedded/www.js"
 
 wifi:

@@ -14,7 +14,7 @@ You do not need to write YAML, build your own ESPHome configuration, or keep a t
 
 Start here: **[Install EspControl](/getting-started/install)**.
 
-**Source code and issues:** [github.com/jtenniswood/espcontrol](https://github.com/jtenniswood/espcontrol).
+**Source code and issues:** [github.com/tiomny/espcontrol](https://github.com/tiomny/espcontrol).
 
 ## What You Can Build
 

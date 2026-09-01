@@ -9,7 +9,7 @@ description:
 ## The Screen Doesn't Respond to Commands
 
 - If the display shows your Home Assistant devices but nothing happens when you tap controls, such as turning lights on, Home Assistant actions probably need to be enabled for the display.
-- Follow the [Enable Actions](https://jtenniswood.github.io/espcontrol/getting-started/home-assistant-actions) guide and make sure **Allow the device to perform Home Assistant actions** is turned on.
+- Follow the [Enable Actions](https://tiomny.github.io/espcontrol/getting-started/home-assistant-actions) guide and make sure **Allow the device to perform Home Assistant actions** is turned on.
 
 ## The Install Button Doesn't Detect My Device
 
@@ -57,7 +57,7 @@ description:
 
 ## I Need Help With a Bug
 
-- Open a [GitHub issue](https://github.com/jtenniswood/espcontrol/issues/new) and describe the display model, firmware version, and what happened.
+- Open a [GitHub issue](https://github.com/tiomny/espcontrol/issues/new) and describe the display model, firmware version, and what happened.
 - For startup, WiFi, loading screen, or Home Assistant connection problems, include a USB log from the [Collect USB Logs](/reference/collect-usb-logs) guide.
 
 Next: [Setup](/features/setup)

@@ -39,7 +39,7 @@ wifi:
 
 packages:
   setup:
-    url: https://github.com/jtenniswood/espcontrol/
+    url: https://github.com/tiomny/espcontrol/
     file: devices/guition-esp32-s3-jc3248w535/packages.yaml
     refresh: 1sec
 ```

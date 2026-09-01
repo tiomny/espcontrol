@@ -14,7 +14,7 @@ from esphome.const import CONF_ID, CONF_PATH, CONF_VERSION
 from esphome.core import CORE, HexInt, ID
 
 
-CODEOWNERS = ["@jtenniswood"]
+CODEOWNERS = ["@tiomny"]
 AUTO_LOAD = ["sha256", "watchdog"]
 DEPENDENCIES = ["esp32_hosted"]
 

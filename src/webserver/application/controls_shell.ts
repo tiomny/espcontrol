@@ -133,7 +133,7 @@ export function createControlsShellFeature(
         });
         var docsLink: any = document.createElement("a");
         docsLink.className = "sp-tab sp-tab-docs";
-        docsLink.href = "https://jtenniswood.github.io/espcontrol/";
+        docsLink.href = "https://tiomny.github.io/espcontrol/";
         docsLink.target = "_blank";
         docsLink.rel = "noopener";
         docsLink.appendChild(document.createTextNode("Docs "));

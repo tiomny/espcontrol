@@ -340,7 +340,7 @@ async function installRoutes(context, slug, options = {}) {
       await route.fulfill({ status: 204, contentType: "text/plain", body: "" });
       return;
     }
-    if (requestUrl.hostname === "jtenniswood.github.io") {
+    if (requestUrl.hostname === "tiomny.github.io") {
       if (requestUrl.pathname.endsWith("/manifest.json")) {
         await route.fulfill({
           status: 200,

@@ -51,7 +51,7 @@ a flashed branch uses that branch's setup UI. The generated files are still
 published for older firmware that loads the hosted GitHub Pages copy:
 
 ```text
-https://jtenniswood.github.io/espcontrol/webserver/<slug>/www.js
+https://tiomny.github.io/espcontrol/webserver/<slug>/www.js
 ```
 
 The fallback hosted bundle URL is set as `js_url` in

@@ -24,8 +24,8 @@ from urllib.parse import urljoin
 ROOT = Path(__file__).resolve().parent.parent
 FIRMWARE_VERSION_PLACEHOLDER = '  firmware_version: "0.0.0"'
 PLACEHOLDER_STRINGS = {"dev", "0.0.0"}
-RELEASE_URL_BASE = "https://github.com/jtenniswood/espcontrol/releases/tag/"
-PROJECT_NAME = "jtenniswood.espcontrol"
+RELEASE_URL_BASE = "https://github.com/tiomny/espcontrol/releases/tag/"
+PROJECT_NAME = "tiomny.espcontrol"
 DEVICE_CHIP_PATTERNS = (
     (re.compile(r"^\s+variant:\s*esp32p4\s*$", re.M), "ESP32-P4"),
     (re.compile(r"^\s+variant:\s*esp32s3\s*$", re.M), "ESP32-S3"),

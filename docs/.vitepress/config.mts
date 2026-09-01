@@ -1,6 +1,6 @@
 import { defineConfig } from 'vitepress'
 
-const hostname = 'https://jtenniswood.github.io/espcontrol/'
+const hostname = 'https://tiomny.github.io/espcontrol/'
 const defaultImage = {
   url: `${hostname}images/home_screen_hero.jpg`,
   width: '1024',
@@ -277,8 +277,8 @@ export default defineConfig({
             url: hostname,
             author: {
               '@type': 'Person',
-              name: 'jtenniswood',
-              url: 'https://github.com/jtenniswood',
+              name: 'tiomny',
+              url: 'https://github.com/tiomny',
             },
             offers: { '@type': 'Offer', price: '0', priceCurrency: 'USD' },
           },
@@ -334,7 +334,7 @@ export default defineConfig({
         description,
         url: canonicalUrl,
         isPartOf: { '@id': `${hostname}#website` },
-        author: { '@type': 'Person', name: 'jtenniswood', url: 'https://github.com/jtenniswood' },
+        author: { '@type': 'Person', name: 'tiomny', url: 'https://github.com/tiomny' },
       }
       if (isHowTo) {
         if (pageData.relativePath === 'getting-started/manual-esphome-setup.md') {
@@ -400,8 +400,8 @@ export default defineConfig({
   themeConfig: {
     nav: [
       { text: 'Install', link: '/getting-started/install' },
-      { text: 'Issues', link: 'https://github.com/jtenniswood/espcontrol/issues' },
-      { text: 'GitHub', link: 'https://github.com/jtenniswood/espcontrol' },
+      { text: 'Issues', link: 'https://github.com/tiomny/espcontrol/issues' },
+      { text: 'GitHub', link: 'https://github.com/tiomny/espcontrol' },
     ],
 
     sidebar: [
@@ -508,11 +508,11 @@ export default defineConfig({
     ],
 
     editLink: {
-      pattern: 'https://github.com/jtenniswood/espcontrol/edit/main/docs/:path',
+      pattern: 'https://github.com/tiomny/espcontrol/edit/main/docs/:path',
       text: 'Edit this page on GitHub',
     },
 
-    socialLinks: [{ icon: 'github', link: 'https://github.com/jtenniswood/espcontrol' }],
+    socialLinks: [{ icon: 'github', link: 'https://github.com/tiomny/espcontrol' }],
 
     search: {
       provider: 'local',
