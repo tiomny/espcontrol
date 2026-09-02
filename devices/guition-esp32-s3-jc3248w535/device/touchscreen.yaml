@@ -1,0 +1,21 @@
+# =============================================================================
+# TOUCHSCREEN - AXS15231 capacitive touchscreen over I2C
+# =============================================================================
+# The JC3248W535 reports touch through the shared AXS15231 controller on I2C
+# (SDA=GPIO4, SCL=GPIO8). Touches wake the screensaver and pause cover art.
+# =============================================================================
+
+i2c:
+  sda: 4
+  scl: 8
+  frequency: 400kHz
+
+touchscreen:
+  - platform: axs15231
+    id: my_touchscreen
+    display: my_display
+    update_interval: 30ms
+    on_touch:
+      - script.execute: cover_art_pause_after_touch
+      - script.wait: cover_art_pause_after_touch
+      - script.execute: screensaver_wake

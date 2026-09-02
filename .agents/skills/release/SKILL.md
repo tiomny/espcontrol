@@ -84,7 +84,7 @@ TAG="vX.Y.Z"
 ```
 
 ```bash
-git switch -c "jtenniswood/prepare-web-assets-${TAG#v}"
+git switch -c "tiomny/prepare-web-assets-${TAG#v}"
 python3 scripts/prepare_release_web_assets.py "$TAG"
 python3 scripts/build.py
 python3 scripts/build.py --check

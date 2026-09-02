@@ -6,9 +6,9 @@ After the initial install, everything is configured through the built-in web pag
 
 ## Quick links
 
-- **Full documentation:** [jtenniswood.github.io/espcontrol](https://jtenniswood.github.io/espcontrol/)
-- **Install guide:** [jtenniswood.github.io/espcontrol/install](https://jtenniswood.github.io/espcontrol/install)
-- **Web UI guide:** [jtenniswood.github.io/espcontrol/web-ui](https://jtenniswood.github.io/espcontrol/web-ui)
+- **Full documentation:** [tiomny.github.io/espcontrol](https://tiomny.github.io/espcontrol/)
+- **Install guide:** [tiomny.github.io/espcontrol/install](https://tiomny.github.io/espcontrol/install)
+- **Web UI guide:** [tiomny.github.io/espcontrol/web-ui](https://tiomny.github.io/espcontrol/web-ui)
 
 ## Features
 

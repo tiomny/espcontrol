@@ -1,6 +1,6 @@
 import { defineConfig } from 'vitepress'
 
-const hostname = 'https://jtenniswood.github.io/espcontrol/'
+const hostname = 'https://tiomny.github.io/espcontrol/'
 const defaultImage = {
   url: `${hostname}images/home_screen_hero.jpg`,
   width: '1024',
@@ -124,6 +124,14 @@ const screenProducts: Record<string, Record<string, string>> = {
     size: '4 inches',
     resolution: '720 x 720',
     processor: 'ESP32-P4',
+  },
+  'screens/guition-esp32-s3-jc3248w535.md': {
+    name: 'Guition JC3248W535',
+    brand: 'Guition',
+    model: 'JC3248W535',
+    size: '3.5 inches',
+    resolution: '320 x 480',
+    processor: 'ESP32-S3',
   },
 }
 
@@ -269,8 +277,8 @@ export default defineConfig({
             url: hostname,
             author: {
               '@type': 'Person',
-              name: 'jtenniswood',
-              url: 'https://github.com/jtenniswood',
+              name: 'tiomny',
+              url: 'https://github.com/tiomny',
             },
             offers: { '@type': 'Offer', price: '0', priceCurrency: 'USD' },
           },
@@ -326,7 +334,7 @@ export default defineConfig({
         description,
         url: canonicalUrl,
         isPartOf: { '@id': `${hostname}#website` },
-        author: { '@type': 'Person', name: 'jtenniswood', url: 'https://github.com/jtenniswood' },
+        author: { '@type': 'Person', name: 'tiomny', url: 'https://github.com/tiomny' },
       }
       if (isHowTo) {
         if (pageData.relativePath === 'getting-started/manual-esphome-setup.md') {
@@ -392,8 +400,8 @@ export default defineConfig({
   themeConfig: {
     nav: [
       { text: 'Install', link: '/getting-started/install' },
-      { text: 'Issues', link: 'https://github.com/jtenniswood/espcontrol/issues' },
-      { text: 'GitHub', link: 'https://github.com/jtenniswood/espcontrol' },
+      { text: 'Issues', link: 'https://github.com/tiomny/espcontrol/issues' },
+      { text: 'GitHub', link: 'https://github.com/tiomny/espcontrol' },
     ],
 
     sidebar: [
@@ -414,6 +422,7 @@ export default defineConfig({
           { text: '4.3-inch JC4880P443', link: '/screens/jc4880p443' },
           { text: '4-inch ESP32-P4 86 Panel', link: '/screens/p4-86' },
           { text: '4-inch 4848S040', link: '/screens/4848s040' },
+          { text: '3.5-inch JC3248W535', link: '/screens/guition-esp32-s3-jc3248w535' },
           { text: 'Printable Stands', link: '/reference/3d-printable-stands' },
         ],
       },
@@ -499,11 +508,11 @@ export default defineConfig({
     ],
 
     editLink: {
-      pattern: 'https://github.com/jtenniswood/espcontrol/edit/main/docs/:path',
+      pattern: 'https://github.com/tiomny/espcontrol/edit/main/docs/:path',
       text: 'Edit this page on GitHub',
     },
 
-    socialLinks: [{ icon: 'github', link: 'https://github.com/jtenniswood/espcontrol' }],
+    socialLinks: [{ icon: 'github', link: 'https://github.com/tiomny/espcontrol' }],
 
     search: {
       provider: 'local',

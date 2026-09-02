@@ -53,11 +53,11 @@ wifi:
 
 packages:
   api_encryption:
-    url: https://github.com/jtenniswood/espcontrol/
+    url: https://github.com/tiomny/espcontrol/
     file: common/addon/api_encryption_dynamic.yaml
     refresh: 1sec
   setup:
-    url: https://github.com/jtenniswood/espcontrol/
+    url: https://github.com/tiomny/espcontrol/
     file: devices/guition-esp32-p4-jc1060p470/packages.yaml
     refresh: 1sec
 ```
@@ -94,15 +94,15 @@ substitutions:
 
 packages:
   api_encryption:
-    url: https://github.com/jtenniswood/espcontrol/
+    url: https://github.com/tiomny/espcontrol/
     file: common/addon/api_encryption_dynamic.yaml
     refresh: 1sec
   setup:
-    url: https://github.com/jtenniswood/espcontrol/
+    url: https://github.com/tiomny/espcontrol/
     file: devices/guition-esp32-p4-jc1060p470/packages.yaml
     refresh: 1sec
   web_server_auth:
-    url: https://github.com/jtenniswood/espcontrol/
+    url: https://github.com/tiomny/espcontrol/
     file: common/addon/web_server_auth.yaml
     refresh: 1sec
 ```
@@ -142,11 +142,11 @@ substitutions:
 
 packages:
   api_encryption:
-    url: https://github.com/jtenniswood/espcontrol/
+    url: https://github.com/tiomny/espcontrol/
     file: common/addon/api_encryption_dynamic.yaml
     refresh: 1sec
   setup:
-    url: https://github.com/jtenniswood/espcontrol/
+    url: https://github.com/tiomny/espcontrol/
     file: devices/guition-esp32-p4-jc1060p470/packages.yaml
     refresh: 1sec
 ```

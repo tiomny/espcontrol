@@ -55,7 +55,7 @@ Please keep the surrounding log lines if possible. Replacing a value with someth
 
 ## Share the Logs in GitHub
 
-1. Open the [EspControl issues page](https://github.com/jtenniswood/espcontrol/issues).
+1. Open the [EspControl issues page](https://github.com/tiomny/espcontrol/issues).
 2. Search for an existing issue that matches your problem.
 3. If one exists, add a comment. If not, open a new issue.
 4. Include the display model, what you expected to happen, what actually happened, and the USB log.

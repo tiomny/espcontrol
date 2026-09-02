@@ -167,6 +167,29 @@
       "rotation": true,
       "ethernetManualInstall": false,
       "subpages": true
+    },
+    {
+      "slug": "guition-esp32-s3-jc3248w535",
+      "installSlug": "guition-esp32-s3-jc3248w535",
+      "name": "Guition JC3248W535",
+      "docsPath": "/screens/guition-esp32-s3-jc3248w535",
+      "screenSize": "3.5 inches",
+      "resolution": "320 x 480",
+      "orientation": "Portrait",
+      "slots": 24,
+      "imageSlots": 1,
+      "imageCardTypes": [
+        "media_cover_art"
+      ],
+      "grid": {
+        "rows": 6,
+        "cols": 4
+      },
+      "chipFamily": "ESP32-S3",
+      "relays": 0,
+      "rotation": true,
+      "ethernetManualInstall": false,
+      "subpages": true
     }
   ]
 }

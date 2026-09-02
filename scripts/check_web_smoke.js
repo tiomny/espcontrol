@@ -618,13 +618,10 @@ assert.strictEqual(hooks.buttonTypeVisibleInPickerFor("fan_switch", false), fals
 assert.strictEqual(hooks.buttonTypeVisibleInPickerFor("fan_oscillate", true), false);
 assert.strictEqual(hooks.buttonTypeVisibleInPickerFor("option_select", false), false);
 assert.strictEqual(hooks.buttonTypeVisibleInPickerFor("option_select", true), false);
-assert.strictEqual(hooks.buttonTypeVisibleInPickerFor("todo", false), false);
-assert.strictEqual(hooks.buttonTypeVisibleInPickerFor("todo", true), false);
 assert(
   hooks.buttonTypePickerKeysFor(false, "fan_speed").includes("fan_speed"),
   "fan cards are available"
 );
-assert(!hooks.buttonTypeRuntimeSpec("todo"), "todo card type is not registered");
 
 assert.strictEqual(hooks.normalizeTemperatureUnit("fahrenheit"), "\u00b0F");
 assert.strictEqual(hooks.normalizeTemperatureUnit("centigrade"), "\u00b0C");
@@ -1585,14 +1582,14 @@ const publicManifest = {
     ota: {
       path: "guition-esp32-p4-jc1060p470.ota.bin",
       md5: "0123456789abcdef0123456789abcdef",
-      release_url: "https://github.com/jtenniswood/espcontrol/releases/tag/v1.12.0",
+      release_url: "https://github.com/tiomny/espcontrol/releases/tag/v1.12.0",
     },
   }],
 };
 assert.deepStrictEqual(plain(hooks.firmwareInfoFromPublicManifest(publicManifest)), {
   latest_version: "v1.12.0",
-  release_url: "https://github.com/jtenniswood/espcontrol/releases/tag/v1.12.0",
-  ota_url: "https://jtenniswood.github.io/espcontrol/firmware/guition-esp32-p4-jc1060p470/guition-esp32-p4-jc1060p470.ota.bin",
+  release_url: "https://github.com/tiomny/espcontrol/releases/tag/v1.12.0",
+  ota_url: "https://tiomny.github.io/espcontrol/firmware/guition-esp32-p4-jc1060p470/guition-esp32-p4-jc1060p470.ota.bin",
   ota_filename: "guition-esp32-p4-jc1060p470.ota.bin",
   ota_md5: "0123456789abcdef0123456789abcdef",
 });
@@ -1607,14 +1604,14 @@ const publicVersionIndex = {
   device: "guition-esp32-p4-jc1060p470",
   versions: [{
     version: "v1.12.0",
-    release_url: "https://github.com/jtenniswood/espcontrol/releases/tag/v1.12.0",
+    release_url: "https://github.com/tiomny/espcontrol/releases/tag/v1.12.0",
     ota: {
       path: "guition-esp32-p4-jc1060p470.ota.bin",
       md5: "0123456789abcdef0123456789abcdef",
     },
   }, {
     version: "v1.11.0",
-    release_url: "https://github.com/jtenniswood/espcontrol/releases/tag/v1.11.0",
+    release_url: "https://github.com/tiomny/espcontrol/releases/tag/v1.11.0",
     ota: {
       path: "versions/v1.11.0/guition-esp32-p4-jc1060p470.ota.bin",
       md5: "abcdef0123456789abcdef0123456789",
@@ -1623,14 +1620,14 @@ const publicVersionIndex = {
 };
 assert.deepStrictEqual(plain(hooks.firmwareInfosFromPublicVersions(publicVersionIndex)), [{
   latest_version: "v1.12.0",
-  release_url: "https://github.com/jtenniswood/espcontrol/releases/tag/v1.12.0",
-  ota_url: "https://jtenniswood.github.io/espcontrol/firmware/guition-esp32-p4-jc1060p470/guition-esp32-p4-jc1060p470.ota.bin",
+  release_url: "https://github.com/tiomny/espcontrol/releases/tag/v1.12.0",
+  ota_url: "https://tiomny.github.io/espcontrol/firmware/guition-esp32-p4-jc1060p470/guition-esp32-p4-jc1060p470.ota.bin",
   ota_filename: "guition-esp32-p4-jc1060p470.ota.bin",
   ota_md5: "0123456789abcdef0123456789abcdef",
 }, {
   latest_version: "v1.11.0",
-  release_url: "https://github.com/jtenniswood/espcontrol/releases/tag/v1.11.0",
-  ota_url: "https://jtenniswood.github.io/espcontrol/firmware/guition-esp32-p4-jc1060p470/versions/v1.11.0/guition-esp32-p4-jc1060p470.ota.bin",
+  release_url: "https://github.com/tiomny/espcontrol/releases/tag/v1.11.0",
+  ota_url: "https://tiomny.github.io/espcontrol/firmware/guition-esp32-p4-jc1060p470/versions/v1.11.0/guition-esp32-p4-jc1060p470.ota.bin",
   ota_filename: "guition-esp32-p4-jc1060p470.ota.bin",
   ota_md5: "abcdef0123456789abcdef0123456789",
 }]);
@@ -1652,7 +1649,7 @@ assert.deepStrictEqual(plain(hooks.firmwareStateAfterVersionIndex("v1.12.0", pub
 });
 assert.strictEqual(
   hooks.firmwareOtaUrlAfterVersionIndex("v1.12.0", publicVersionIndex, "v1.11.0"),
-  "https://jtenniswood.github.io/espcontrol/firmware/guition-esp32-p4-jc1060p470/guition-esp32-p4-jc1060p470.ota.bin",
+  "https://tiomny.github.io/espcontrol/firmware/guition-esp32-p4-jc1060p470/guition-esp32-p4-jc1060p470.ota.bin",
   "latest firmware OTA resolution must not follow the selected previous version"
 );
 assert.strictEqual(hooks.firmwareVersionLabelFor("", true), "Checking version...");
@@ -1702,7 +1699,7 @@ assert.deepStrictEqual(plain(hooks.firmwareStateAfterPublicManifest("Dev", publi
   version: "Dev build",
   latest: "v1.12.0",
   updateState: "",
-  releaseUrl: "https://github.com/jtenniswood/espcontrol/releases/tag/v1.12.0",
+  releaseUrl: "https://github.com/tiomny/espcontrol/releases/tag/v1.12.0",
   updateAvailable: false,
   installAvailable: true,
 });

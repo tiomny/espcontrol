@@ -49,7 +49,7 @@ repaired through that path.
 Some boards expose a separate C6 UART programming header. Direct recovery through
 that header requires a compatible 3.3 V USB-to-UART programmer and the exact wiring
 for the panel. Collect a [USB startup log](/reference/collect-usb-logs) and open a
-[GitHub issue](https://github.com/jtenniswood/espcontrol/issues/new) before attempting
+[GitHub issue](https://github.com/tiomny/espcontrol/issues/new) before attempting
 that advanced procedure.
 
 Next: [Troubleshooting](/getting-started/troubleshooting)

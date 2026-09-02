@@ -12,7 +12,7 @@ import esphome.config_validation as cv
 from esphome.const import CONF_ID
 import os
 
-CODEOWNERS = ["@jtenniswood"]
+CODEOWNERS = ["@tiomny"]
 AUTO_LOAD = ["mdns"]
 
 CONF_ACTION_RESPONSES = "action_responses"

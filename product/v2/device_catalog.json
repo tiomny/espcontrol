@@ -983,11 +983,11 @@
               "screen_saver_clock_default_brightness": "\"35\"",
               "screen_schedule_clock_min_brightness": "\"1\"",
               "screen_schedule_clock_default_brightness": "\"10\"",
-              "voice_wake_chime_file": "\"https://raw.githubusercontent.com/jtenniswood/espcontrol/main/devices/esp32-p4-86/device/voice_wake_chime.flac\"",
-              "voice_timer_alert_file": "\"https://raw.githubusercontent.com/jtenniswood/espcontrol/main/devices/esp32-p4-86/device/voice_timer_alert.flac\"",
-              "voice_stt_failure_chime_file": "\"https://raw.githubusercontent.com/jtenniswood/espcontrol/main/devices/esp32-p4-86/device/voice_stt_failure_chime.flac\"",
-              "alarm_delay_entry_beep_file": "\"https://raw.githubusercontent.com/jtenniswood/espcontrol/30ea813b1e2d4008b019c30862dce478d238a697/devices/esp32-p4-86/device/alarm_delay_entry_beep.flac\"",
-              "alarm_delay_exit_beep_file": "\"https://raw.githubusercontent.com/jtenniswood/espcontrol/30ea813b1e2d4008b019c30862dce478d238a697/devices/esp32-p4-86/device/alarm_delay_exit_beep.flac\""
+              "voice_wake_chime_file": "\"https://raw.githubusercontent.com/tiomny/espcontrol/main/devices/esp32-p4-86/device/voice_wake_chime.flac\"",
+              "voice_timer_alert_file": "\"https://raw.githubusercontent.com/tiomny/espcontrol/main/devices/esp32-p4-86/device/voice_timer_alert.flac\"",
+              "voice_stt_failure_chime_file": "\"https://raw.githubusercontent.com/tiomny/espcontrol/main/devices/esp32-p4-86/device/voice_stt_failure_chime.flac\"",
+              "alarm_delay_entry_beep_file": "\"https://raw.githubusercontent.com/tiomny/espcontrol/30ea813b1e2d4008b019c30862dce478d238a697/devices/esp32-p4-86/device/alarm_delay_entry_beep.flac\"",
+              "alarm_delay_exit_beep_file": "\"https://raw.githubusercontent.com/tiomny/espcontrol/30ea813b1e2d4008b019c30862dce478d238a697/devices/esp32-p4-86/device/alarm_delay_exit_beep.flac\""
             }
           }
         }
@@ -1174,6 +1174,183 @@
               "clock_bar_visual_gap": "\"8\"",
               "clock_font_size": "\"160\"",
               "clock_cx": "\"240\"",
+              "clock_cy": "\"240\"",
+              "screen_saver_clock_min_brightness": "\"1\"",
+              "screen_saver_clock_default_brightness": "\"35\"",
+              "screen_schedule_clock_min_brightness": "\"1\"",
+              "screen_schedule_clock_default_brightness": "\"10\""
+            },
+            "apiNavigateAction": false
+          }
+        }
+      }
+    },
+    "guition-esp32-s3-jc3248w535": {
+      "profiles": {
+        "platform": "esp32-s3",
+        "modal": "compact-portrait",
+        "fonts": "compact-panel",
+        "input": "touchscreen"
+      },
+      "config": {
+        "slots": 24,
+        "capabilities": {
+          "imageSlots": 1
+        },
+        "public": {
+          "name": "Guition JC3248W535",
+          "docsPath": "/screens/guition-esp32-s3-jc3248w535",
+          "screenSize": "3.5 inches",
+          "resolution": "320 x 480",
+          "orientation": "Portrait"
+        },
+        "layout": {
+          "cols": 4,
+          "rows": 6,
+          "firmwareGrid": "6x4",
+          "portraitCols": 4
+        },
+        "rotation": {
+          "enabled": true,
+          "options": [
+            "0",
+            "90",
+            "180",
+            "270"
+          ],
+          "default": "0",
+          "displayOffset": 180
+        },
+        "web": {
+          "coverArtSquareOverlay": false,
+          "dragMode": "displace",
+          "dragAnimation": true,
+          "disabledCardTypes": [
+            "weather_forecast",
+            "image"
+          ],
+          "screen": {
+            "width": "100%",
+            "aspect": "320/480"
+          },
+          "portrait": {
+            "cols": 6,
+            "rows": 4,
+            "screen": {
+              "width": "100%",
+              "aspect": "480/320"
+            }
+          },
+          "topbar": {
+            "height": 8.0,
+            "padding": "1.6cqw 0.83cqw 0.83cqw",
+            "fontSize": 4.6
+          },
+          "grid": {
+            "top": 10.0,
+            "compactTop": 1.0,
+            "left": 1.25,
+            "right": 1.25,
+            "bottom": 1.0,
+            "gap": 0.765,
+            "fr": "1fr"
+          },
+          "btn": {
+            "radius": 1.2,
+            "padding": 1.8,
+            "iconSize": 9.0,
+            "labelSize": 3.4,
+            "coverArtTitleSize": 4.6,
+            "coverArtArtistSize": 3.1,
+            "labelLines": 2,
+            "labelLinesDouble": 3
+          },
+          "emptyCell": {
+            "radius": 1.2
+          },
+          "sensorBadge": {
+            "top": 1.4,
+            "right": 1.4,
+            "fontSize": 2.8
+          },
+          "subpageBadge": {
+            "bottom": 1.4,
+            "right": 1.4,
+            "fontSize": 3.4
+          }
+        },
+        "firmware": {
+          "display": {
+            "wrapTallLabels": false,
+            "refreshRebuildsSubpages": true,
+            "subpageChevronX": 3,
+            "subpageChevronY": -2,
+            "subpageChevronTextWidthPercent": 96,
+            "coverArt": {
+              "cover_art_size": "480",
+              "cover_art_decode_size": "480",
+              "cover_art_x": "0",
+              "cover_art_y": "0",
+              "cover_art_accent_x": "0",
+              "cover_art_accent_y": "320",
+              "cover_art_accent_width": "320",
+              "cover_art_accent_height": "160",
+              "cover_art_accent_bg_opa": "100%",
+              "cover_art_accent_opa": "100%",
+              "cover_art_panel_x": "16",
+              "cover_art_panel_y": "334",
+              "cover_art_panel_width": "288",
+              "cover_art_panel_height": "130",
+              "cover_art_panel_pad_top": "0",
+              "cover_art_panel_pad_bottom": "0",
+              "cover_art_panel_pad_left": "0",
+              "cover_art_panel_pad_right": "0",
+              "cover_art_panel_pad_row": "0",
+              "cover_art_title_font": "font_cover_art_title",
+              "cover_art_title_max_height": "80",
+              "cover_art_title_line_space": "0",
+              "cover_art_artist_font": "font_cover_art_artist",
+              "cover_art_artist_pad_top": "6",
+              "cover_art_artist_long_mode": "dot",
+              "cover_art_time_font": "font_cover_art_time",
+              "cover_art_time_pad_top": "8",
+              "cover_art_progress_width": "320",
+              "cover_art_progress_height": "4",
+              "cover_art_text_color": "0xFFFFFF",
+              "cover_art_square_overlay": "false",
+              "cover_art_live_image_updates": "false"
+            }
+          },
+          "package": {
+            "firmwareVersion": "dev",
+            "subpageConfigChunks": 4,
+            "substitutions": {
+              "screen_width": "\"320\"",
+              "screen_height": "\"480\"",
+              "content_width": "\"280\"",
+              "setup_icon_font_id": "font_icon_main",
+              "setup_title_font_id": "font_text_title",
+              "setup_body_font_id": "font_text_body",
+              "setup_pad_row": "\"12\"",
+              "setup_loading_pad_row": "\"24\"",
+              "setup_action_button_width": "\"140\"",
+              "setup_action_button_height": "\"40\"",
+              "setup_action_button_radius": "\"8\"",
+              "icon_font": "font_icon_main",
+              "subpage_chevron_font": "font_icon_status",
+              "label_font": "font_text_body",
+              "media_title_font": "font_text_title",
+              "unit_font": "font_text_body",
+              "sensor_value_font": "font_number_value",
+              "padding": "10px",
+              "radius": "6px",
+              "main_page_card_gap": "\"6\"",
+              "main_page_pad_top": "\"18\"",
+              "main_page_compact_pad_top": "\"4\"",
+              "clock_bar_item_gap": "\"36\"",
+              "clock_bar_visual_gap": "\"6\"",
+              "clock_font_size": "\"100\"",
+              "clock_cx": "\"160\"",
               "clock_cy": "\"240\"",
               "screen_saver_clock_min_brightness": "\"1\"",
               "screen_saver_clock_default_brightness": "\"35\"",
